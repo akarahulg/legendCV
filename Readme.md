@@ -9,7 +9,7 @@
 ### With Photo
 ![With Photo](image_2.png)
 
-[Click here to view the full compiled PDF](https://github.com/akarahulg/legendCV/blob/main/cvmain.pdf)
+[Click here to view the full compiled PDF](https://github.com/akarahulg/legendCV/blob/main/cvrahul.pdf)
 ## Features
 
 - Customizable fonts and colors
@@ -32,11 +32,11 @@ To use this template, you need to have LaTeX installed on your system. You can d
     cd legendCV
     ```
 
-2. Open the `cvmain.tex` file in your favorite LaTeX editor.
+2. Open the `cvrahul.tex` file in your favorite LaTeX editor.
 
 ### Usage
 
-1. Customize your CV by editing the `cvmain.tex` file. You can change the fonts, colors, and contact details as needed.
+1. Customize your CV by editing the `cvrahul.tex` file. You can change the fonts, colors, and contact details as needed.
 
 2. Add your content to the respective section files:
     - `experience.tex`
@@ -56,21 +56,21 @@ To use this template, you need to have LaTeX installed on your system. You can d
     \printbibliography[heading={subbibliography},title={Conference Proceedings},type=inproceedings]
     ```
 
-4. Compile the `cvmain.tex` file using your LaTeX editor or from the command line:
+4. Compile the `cvrahul.tex` file using your LaTeX editor or from the command line:
 
     ```sh
-    pdflatex cvmain.tex
-    biber cvmain
-    pdflatex cvmain.tex
-    pdflatex cvmain.tex
+    pdflatex cvrahul.tex
+    biber cvrahul
+    pdflatex cvrahul.tex
+    pdflatex cvrahul.tex
     ```
 
-5. Your CV will be generated as `cvmain.pdf`.
+5. Your CV will be generated as `cvrahul.pdf`.
 
 ### Customization
 
-- **Fonts**: You can change the fonts used in the CV by modifying the font packages in the `cvmain.tex` file.
-- **Colors**: You can set the icon color using the `\seticoncolor` command in the `cvmain.tex` file.
+- **Fonts**: You can change the fonts used in the CV by modifying the font packages in the `cvrahul.tex` file.
+- **Colors**: You can set the icon color using the `\seticoncolor` command in the `cvrahul.tex` file.
 - **Profile Picture**: Uncomment the line with `\cvheader` that includes `photo.png` and add your profile picture to the project directory.
 
 ### CV Commands
@@ -139,7 +139,7 @@ Here is an explanation of the custom CV commands available in the `legendcv.sty`
 
 ### Example
 
-Here is an example of how to define your contact details in the `cvmain.tex` file:
+Here is an example of how to define your contact details in the `cvrahul.tex` file:
 
 ```tex
 \cvcontact{\faEnvelope[regular]}{mailto:your.email@example.com}{your.email@example.com}
