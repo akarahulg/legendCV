@@ -129,7 +129,8 @@
   \noindent
   \hspace{2em} % Small indentation
   \makebox[1.5em][l]{\color{myPurple} \faIcon{#2}} % Align icons properly
-  \textbf{#3} \hfill \texttt{#4 -- #5} % Title and dates aligned
+  \textbf{#3} \hfill \textbf{\texttt{#4 -- #5}}
+ % Title and dates aligned
   \parindent=4.2em\par % Indent for description alignment
   \ifx#1\empty\else
     \vspace{0.1em} % Increased space before the one-liner
@@ -144,7 +145,7 @@
   \noindent
   \hspace{2em} % Small indentation
   \makebox[1.5em][l]{\color{myPurple} \faIcon{#2}} % Icon
-  \textbf{#3} \hfill \texttt{#4 -- #5} % Degree and years
+  \textbf{#3} \hfill \textbf{\texttt{#4 -- #5}} % Degree and years
   \parindent=4.1em\par % Align descriptions
   \ifx#1\empty\else
     \vspace{0.1em} % Space before optional topic
@@ -208,7 +209,7 @@
 \newcommand{\cvonelineentry}[3][]{%
   \noindent
   \hspace{2em} % Small indentation
-  \makebox[8em][l]{\texttt{#1}} % Fixed-width box for the date
+  \makebox[8em][l]{\textbf{\texttt{#1}}} % Fixed-width box for the date
   \makebox[2.5em][l]{\color{myPurple} \faIcon{#2}} % Fixed-width box for the icon
   \begin{minipage}[t]{\dimexpr\linewidth-12.5em} % Ensure text wraps properly
     #3 % Description text

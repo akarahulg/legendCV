@@ -3,17 +3,31 @@
 \nocite{*}
 %% If you just want everything in one list
 
+% \renewcommand{\bibfont}{\fontsize{10}{8}\selectfont}
+%
+% % Define custom heading for subbibliographies (e.g., Journal Articles, In Preparation)
+% \titleformat{\subsection}[block]
+%   {\normalfont\bfseries\normalsize}{\hspace{2em}\thesection}{1em}{}
+%
+%
+% \defbibheading{subbibliography}[\bibname]{
+%   \vspace{-2em} % Reduce space before the section title
+%   \subsection*{\hspace{0.5em}#1} % Add indentation before the subsection title
+%   \vspace{0.2em} % Space after the section title
+% }
+%
+\definecolor{mypurple}{RGB}{128, 0, 128} % Define the custom purple color
+
 \renewcommand{\bibfont}{\fontsize{10}{8}\selectfont}
 
 % Define custom heading for subbibliographies (e.g., Journal Articles, In Preparation)
 \titleformat{\subsection}[block]
   {\normalfont\bfseries\normalsize}{\hspace{2em}\thesection}{1em}{}
 
-
 \defbibheading{subbibliography}[\bibname]{
   \vspace{-2em} % Reduce space before the section title
-  \subsection*{\hspace{2.5em}#1} % Add indentation before the subsection title
-  \vspace{-0.5em} % Space after the section title
+  \subsection*{\textcolor{mypurple}{\hspace{0.5em}#1}} % Add indentation and color
+  \vspace{0.2em} % Space after the section title
 }
 
 
