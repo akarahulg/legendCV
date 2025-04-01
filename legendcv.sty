@@ -184,11 +184,13 @@
 \newcommand{\cvspacer}{\vspace{0.5em}} 
 
 % Section header with gradient background
+%
+
 \newcommand{\cvsection}[1]{%
   \noindent
   \begin{tikzpicture}[baseline]
-    \shade[left color=SwishLineColour!80!white, right color=white] 
-      rectangle (\linewidth, 20pt);
+    \shade[rounded corners=10pt, left color=SwishLineColour!80!white, right color=white] 
+      rectangle (\linewidth/1.75, 20pt);
     \node[font=\bfseries\large, inner sep=0pt, text ragged, anchor=south west, 
           text depth=.5ex, text height=1.5ex] 
           at (5pt, 3pt) {#1};
