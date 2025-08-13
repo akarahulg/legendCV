@@ -17,7 +17,7 @@
 \geometry{left=1in, right=1in, top=0.5in, bottom=0.5in}
 
 % Define custom color
-\definecolor{myPurple}{RGB}{128, 0, 128}
+\definecolor{myPurple}{HTML}{660066}
 \definecolor{SwishLineColour}{HTML}{9fa0c3} % Light Purple
 
 % Change font family globally to sans-serif
@@ -233,7 +233,7 @@
 
 % Define colors
 \definecolor{doicolor}{HTML}{540d6e} % Dark blue for DOI
-\definecolor{markercolor}{HTML}{b5179e} % Marker color
+\definecolor{markercolor}{HTML}{660066} % Marker color
 
 % Hyperref setup
 \hypersetup{
@@ -289,10 +289,13 @@
   {\textcolor{doicolor}{\faLink\ \thefield{doi}}}%
 }
 
-
+\DeclareFieldFormat{url}{%
+  \href{\thefield{url}}%
+  {\textcolor{doicolor}{\faLink\ \thefield{url}}}%
+}
 
 % Regular URLs in black
-\DeclareFieldFormat{url}{\href{\thefield{url}}{\textcolor{black}{\thefield{url}}}}
+% \DeclareFieldFormat{url}{\href{\thefield{url}}{\textcolor{black}{\thefield{url}}}}
 
 % Name highlighting
 \newcommand{\mynames}[1]{\def\my@namelist{#1}}
