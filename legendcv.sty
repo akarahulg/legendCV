@@ -17,8 +17,9 @@
 \geometry{left=1in, right=1in, top=0.5in, bottom=0.5in}
 
 % Define custom color
-\definecolor{myPurple}{HTML}{660066}
+\definecolor{faiconcolor}{HTML}{373f51}
 \definecolor{SwishLineColour}{HTML}{9fa0c3} % Light Purple
+\definecolor{doicolor}{HTML}{540d6e} % Dark blue for DOI
 
 % Change font family globally to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
@@ -122,13 +123,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\newcommand{\makefield}[2]{\makebox[1.5em]{\color{myPurple} #1} #2\hspace{2em}}
+\newcommand{\makefield}[2]{\makebox[1.5em]{\color{faiconcolor} #1} #2\hspace{2em}}
 
 % Custom CV Entry command
 \newcommand{\cventry}[5][]{%
   \noindent
   \hspace{2em} % Small indentation
-  \makebox[1.5em][l]{\color{myPurple} \faIcon{#2}} % Align icons properly
+  \makebox[1.5em][l]{\color{faiconcolor} \faIcon{#2}} % Align icons properly
   \textbf{#3} \hfill \textbf{\texttt{#4 -- #5}}
  % Title and dates aligned
   \parindent=4.2em\par % Indent for description alignment
@@ -144,7 +145,7 @@
 \newcommand{\cvbigentry}[6][]{%
   \noindent
   \hspace{2em} % Small indentation
-  \makebox[1.5em][l]{\color{myPurple} \faIcon{#2}} % Icon
+  \makebox[1.5em][l]{\color{faiconcolor} \faIcon{#2}} % Icon
   \textbf{#3} \hfill \textbf{\texttt{#4 -- #5}} % Degree and years
   \parindent=4.1em\par % Align descriptions
   \ifx#1\empty\else
@@ -161,8 +162,8 @@
 % Custom Skill Entry
 \newcommand{\cvskill}[3]{%
     \par\noindent
-    \makebox[4.1em][r]{\color{myPurple} \scalebox{0.8}{\faIcon{#2}} \hspace{0.25em}} % Scaled-down icon
-    {\footnotesize \textbf{\color{myPurple} #1}} % Smaller heading
+    \makebox[4.1em][r]{\color{faiconcolor} \scalebox{0.8}{\faIcon{#2}} \hspace{0.25em}} % Scaled-down icon
+    {\footnotesize \textbf{\color{faiconcolor} #1}} % Smaller heading
     {\footnotesize \color{black}: #3} % Smaller description
     \par\vspace{0.25em} % Adds spacing between entries
 }
@@ -170,7 +171,7 @@
 % Description block
 \newcommand{\cvdescitem}[1]{%
   \par\noindent
-  \makebox[3.8em][r]{\color{myPurple} \faAngleRight} % Bullet icon
+  \makebox[3.8em][r]{\color{faiconcolor} \faAngleRight} % Bullet icon
   \hangindent=4.2em
   \hangafter=1
   #1\par
@@ -212,7 +213,7 @@
   \noindent
   \hspace{2em} % Small indentation
   \makebox[8em][l]{\textbf{\texttt{#1}}} % Fixed-width box for the date
-  \makebox[2.5em][l]{\color{myPurple} \faIcon{#2}} % Fixed-width box for the icon
+  \makebox[2.5em][l]{\color{faiconcolor} \faIcon{#2}} % Fixed-width box for the icon
   \begin{minipage}[t]{\dimexpr\linewidth-12.5em} % Ensure text wraps properly
     #3 % Description text
   \end{minipage}
@@ -232,8 +233,6 @@
 \RequirePackage{etoolbox} % For \ifboolexpr
 
 % Define colors
-\definecolor{doicolor}{HTML}{540d6e} % Dark blue for DOI
-\definecolor{markercolor}{HTML}{660066} % Marker color
 
 % Hyperref setup
 \hypersetup{
@@ -253,7 +252,7 @@
 
 % Custom circled numbering for bibliography items
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-   \node[shape=circle,text=white,fill=markercolor!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.2em,text centered] (char) {#1};}}
+   \node[shape=circle,text=white,fill=faiconcolor!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.2em,text centered] (char) {#1};}}
 
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
