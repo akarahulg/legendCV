@@ -90,6 +90,7 @@
         % Contact block
         \small
         \renewcommand{\baselinestretch}{1.2}
+		% \hspace{-1em}
         \parbox{\textwidth}{\raggedright \contactlist}
     \else
         % Image present, use two-column layout with fixed image size
@@ -257,7 +258,7 @@
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
 
-\DeclareFieldFormat{labelnumberwidth}{\makebox[2.5em][l]{\circled{\thebibitem}}}
+\DeclareFieldFormat{labelnumberwidth}{\hspace{1.5em}\makebox[2.0em][l]{\circled{\thebibitem}}}
 \setlength{\biblabelsep}{0pt}
 \AtEveryBibitem{\stepcounter{bibitem}}
 
